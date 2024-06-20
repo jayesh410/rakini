@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1&display=swap"
       rel="stylesheet"
     />
-    <link href="./dist/output.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
   </head>
 
   <body class="bg-white font-sans">
@@ -34,6 +34,7 @@
 
         <nav id="nav-bar" class="flex items-center font-bold gap-6">
           <a href="#home">Home</a>
+          <a href="#about">About Us</a>
           <div class="dropdown">
             <a href="#services" class="dropbtn">Services</a>
             <div class="dropdown-content">
@@ -46,15 +47,28 @@
           </div>
           <!-- Suggested code may be subject to a license. Learn more: ~LicenseLog:3690011227. -->
           <div class="dropdown">
-            <a href="#features" class="dropbtn">Features</a>
+            <a href="#feature" class="dropbtn">Features</a>
             <div class="dropdown-content">
               <a href="#">link 1</a>
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
             </div>
           </div>
+          <div class="dropdown">
+            <a href="#portfolio" class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+              <a href="#">E-Commerce Services</a>
+              <a href="#">CMS Solutions</a>
+              <a href="#">UX/UI Services</a>
+              <a href="#">Web Development</a>
+              <a href="#">Application Development</a>
+              <a href="#">softwere Development</a>
+              <a href="#">Graphics Design</a>
+            </div>
+          </div>
           <a href="#contact">Contact</a>
-          <a href="#about">About Us</a>
+          
+          
         </nav>
       </div>
     </header>
@@ -65,6 +79,7 @@
         <a href="#services">Services</a>
         <a href="#features">Features</a>
         <a href="#contact">Contact</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#about">About Us</a>
       </div>
     </div>
@@ -98,49 +113,153 @@
           >
         </div>
       </div>
-      <div class="hero-img rounded-lg border-2 border-blue-300 bg-white"></div>
+      <div class="hero-img rounded-lg border-2 border-blue-300 bg-white"> <section id="contact">
+        <h3 class="text-center font-bold text-3xl">Contact</h3>
+        <div class="form-container shadow bg-white mx-auto my-8 p-2">
+          <form id="contact-form" class="w-full p-2">
+            <div class="flex flex-wrap justify-center flex-row">
+              <input
+                type="text"
+                placeholder="Name"
+                class="rounded-lg p-2 m-2"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Phone"
+                class="rounded-lg p-2 m-2"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="rounded-lg p-2 m-2"
+                required
+              />
+              <textarea class="bg-gray-200 rounded p-2 m-2" required></textarea>
+              <button
+                class="submit-btn w-full text-white rounded-lg p-2 m-2 bg-green-600"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section></div>
     </section>
     <!--About Section-->
-    <section id="about" class="py-10 bg-transparent">
-      <div class="px-6 text-center m-4">
-        <h2
-          class="text-2xl text-white font-bold">
-          About Us
-        </h2>
+    <<section
+    id="about"
+    class="p-10 flex justify-center items-center flex-col pt-5"
+  >
+    <div class="px-6 m-4 w-full text-center">
+      <h2 class="text-4xl font-bold text-gradient-primary text-white">About Us</h2>
+    </div>
+    <div
+      class="flex justify-center items-center flex-wrap w-full"
+    >
+      <div class="description p-10 rounded-2xl w-full bg-white">
+        <h3 class="mx-auto text-left font-bold">
+          Soft Tech (a Cyncly Company) provides premium software solutions for
+          the window and door industry.
+        </h3>
+        <p class="text-gray-600 mt-2 text-left">
+          Thousands of window and door manufacturers, dealers and suppliers
+          trust us to provide fast and accurate design, estimation and
+          manufacturing solutions. Soft Tech's software is exclusively built
+          to design, estimate and manufacture windows and doors. We therefore
+          help businesses maximize productivity, reduce costs and drive
+          business growth. Most of all, whatever the size of your business,
+          Soft Tech provides the solution that will drive efficiencies in your
+          manufacturing business.
+        </p>
       </div>
-      <div class="flex justify-center items-center flex-wrap">
-        <div class="description p-2">
-          <h3 class="mx-auto px-6 text-left font-bold mt-8 w-full">
-            Soft Tech (a Cyncly Company) provides premium software solutions for
-            the window and door industry.
-          </h3>
-          <p class="text-gray-600 mt-4 text-left m-8">
-            Thousands of window and door manufacturers, dealers and suppliers
-            trust us to provide fast and accurate design, estimation and
-            manufacturing solutions. Soft Tech's software is exclusively built
-            to design, estimate and manufacture windows and doors. We therefore
-            help businesses maximize productivity, reduce costs and drive
-            business growth. Most of all, whatever the size of your business,
-            Soft Tech provides the solution that will drive efficiencies in your
-            manufacturing business.
-          </p>
-        </div>
-        <div class="image bg-cover" style="background-image: url('https://cdn.gamma.app/9fr49wzi0xnv4h6/generated-images/6HmgzdCsKMXpoLq1.jpg');">
-         
-        </div>
-      </div>
-    </section>
+      <!----background-image: url('https://cdn.gamma.app/9fr49wzi0xnv4h6/generated-images/6HmgzdCsKMXpoLq1.jpg');
+      height: 100vh;-->
+    </div>
+  </section>
+
 
     <!-- Services Section -->
     <section id="services" class="">
-      <h2 class="text-2xl font-bold text-center py-4">Services</h2>
+      <h2 class="text-2xl font-bold text-center py-4 text-white">Services</h2>
       <div
         id="service-card-container"
-        class="flex justify-center flex-wrap gap-20"
+        class="flex justify-center flex-wrap gap-5"
       ></div>
     </section>
 
-    <!-- Features Section -->
+    
+   
+    <!---Portfolio Section-->
+    <section id="portfolio" class="bg-gray-100">
+      <h2 class="text-5xl font-bold text-center py-4 my-5 ">Portfolio</h2>
+       <div class="flex justify-center flex-wrap gap-5 font-bold">
+        Welcome To Softtech India
+        <p class="text-gray-600 mt-4 text-center m-4">Softtech India is one of the top web and application development or digital marketing company in India & Globally. We Develop Custom Website and Web Development , Web Based ERP Software, Android/IOS Application and Digital Marketing To Satisfy Evolving Demand Of Modern Business Era.</p>
+       </div>
+       <div class=" feature-wrapper flex justify-center flex-wrap gap-5">
+        <div class="animate1 flex flex-col items-center bg-red-500">
+          <h4 class="font-bold">E-Commerce Services</h4>
+          <p>
+            MAGENTO | WORDPRESS | DRUPAL | OPENCART | CAKEPHP We provide the finest eCommerce development services to help generate high revenue and improve conversions.
+          </p>
+          
+        </div>
+
+        <div class=" animateup bg-blue-500 p-4 rounded-lg">
+          <h4 class="font-bold">CMS Solutions</h4>
+          <p>
+            WORDPRESS | DRUPAL | JOOMLA We follow advance technologies of CMS development in order to provide featured packed content management system in diverse platforms.
+          </p>
+        </div>
+        <div class="animate2 bg-teal-300 p-4 rounded-lg">
+          <h4 class="font-bold">UX/UI Services</h4>
+          <p>
+            WEBSITE | MOBIL APP | LANDING PAGE You get comprehensive user interface design solutions specialized in Web/ Desktop/ Mobile User Interface (UI/UX) design and development.
+          </p> 
+        </div>
+        <div class="animate2 bg-indigo-600 p-4 rounded-lg">
+          <h4 class="font-bold">Web Development</h4>
+          <p>
+            PHP | .NET | JAVA | JOOMLA
+            Over 4 years we have been working with top web technologies to offer next-gen web application solutions and premium static / dynamic websites.
+          </p>
+        </div class="animateup bg-pink-600 p-4 rounded-lg">
+        <div class="bg-purple-300 p-4 rounded-lg">
+          <h4 class="font-bold">Application Development</h4>
+          <p>
+            IOS | ANDROID | WINDOW | HYBRID Empowering modern day enterprises, we offer custom business & enterprise mobile app development services.
+          </p>
+        </div>
+        <div class="animate1 bg-orange-500 p-4 rounded-lg">
+          <h4 class="font-bold">softwere Development</h4>
+          <p>
+            NET | MVC | JAVA | JAVASCRIPT Our Vast Experience In Software Product Development For Small And Large Businesses Lets Us Deliver Diverse Solutions You Need To Dynamically Run Your Business Operations.
+          </p>
+        </div>
+        <div class="animate1 bg-yellow-300 p-4 rounded-lg">
+          <h4 class="font-bold">Digital Marketing</h4>
+          <p>
+            SOCIAL MEDIA | SEO | GOOGLE ADWORDS We offer unlimited solutions to all your business needs. Our ultimate goal is to make your business a Brand. We are your brand creators.
+          </p>
+        </div>
+        <div class="animatedown bg-lime-400 p-4 rounded-lg">
+          <h4 class="font-bold">Graphics Design</h4>
+          <p>
+            LOGO | WEBSITE | BROCHURE We offer Graphic Design services that work with organization of every kind. We deliver quality and this is our mainstay.
+          </p>
+        </div>
+        <div class="animate2 bg-red-200 p-4 rounded-lg">
+          <h4 class="font-bold">AI Tools</h4>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <!--Feature Section -->
     <section id="feature" class="p-4 pb-10 bg-gray-100">
       <h2 class="text-4xl font-bold text-center py-4 my-5">Why Choose Us</h2>
       <div class="feature-wrapper flex justify-center flex-wrap gap-5">
@@ -175,39 +294,7 @@
         </div>
       </div>
     </section>
-    <section id="contact p-2">
-      <h3 class="text-center font-bold text-3xl">Contact</h3>
-      <div class="form-container shadow bg-white mx-auto my-8 p-2">
-        <form id="contact-form" class="w-full p-2">
-          <div class="flex flex-wrap justify-center flex-row">
-            <input
-              type="text"
-              placeholder="Name"
-              class="rounded-lg p-2 m-2"
-              required
-            />
-            <input
-              type="tel"
-              placeholder="Phone"
-              class="rounded-lg p-2 m-2"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              class="rounded-lg p-2 m-2"
-              required
-            />
-            <textarea class="bg-gray-200 rounded p-2 m-2" required></textarea>
-            <button
-              class="submit-btn w-full text-white rounded-lg p-2 m-2 bg-green-600"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+   
     <!-- Footer -->
 
     <footer id="footer" class="bg-gray-800 text-white py-6">
@@ -263,6 +350,6 @@
         <p>Copyright &copy; 2024 Rakini SoftTech.</p>
       </div>
     </footer>
-    <script src="src/main.js"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>

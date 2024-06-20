@@ -1,3 +1,4 @@
+import addAnimation from "./observer.js";
 const select = (elem) => document.querySelector(elem);
 const selectAll = (elem) => document.querySelectorAll(elem);
 const header = select("#header");
@@ -63,9 +64,9 @@ function renderServices({services}) {
     const createCard = document.createElement("div");
 
     if (index % 2 == 0) {
-      createCard.classList.add("service-card", "flex", "flex-row");
+      createCard.classList.add("service-card", "flex", "flex-row","animate1");
     } else {
-      createCard.classList.add("service-card", "flex", "flex-row-reverse");
+      createCard.classList.add("service-card", "flex", "flex-row-reverse", "animate2");
     }
     const image = document.createElement("div");
     image.classList.add("image");
@@ -76,14 +77,15 @@ function renderServices({services}) {
       "p-6",
       "flex",
       "flex-col",
-      "justify-center"
+      "justify-center",
+    
     );
     const title = document.createElement("h4");
     title.classList.add("text-2xl", "text-green-400", "font-bold");
     title.innerText = service.title;
     description.appendChild(title);
     const text = document.createElement("p");
-    text.classList.add("text-gray-600");
+    text.classList.add("text-white");
     text.innerText = service.description;
     description.appendChild(text);
     createCard.appendChild(image);
@@ -92,38 +94,17 @@ function renderServices({services}) {
   });
   //window.addEventListener("scroll",addAnimationClassToServicse);
 }
-function addAnimationClassToServicse() {
-  const heroHeight = home.offsetHeight;
-  const aboutSectionHeight = aboutSection.offsetHeight;
-  const serviceCards = serviceCardContainer.querySelectorAll(".service-card");
-  const screenHeight10 = window.innerHeight * 0.4; //40% of screen height
-  const threshold = (heroHeight +  aboutSectionHeight)- 500;
-
-  serviceCards.forEach((card, index) => {
-    const cardImg = card.querySelector(".image");
-    const isEven = (index + 1) % 2 === 0;
-    const slideClass = isEven ? "slideRight" : "slideLeft";
-    const nonSlideClass = isEven ? "shiftRight" : "shiftLeft";
-    const shouldSlide = scrollTop >= threshold + (index + 1) * screenHeight10;
-    if (scrollTop >= threshold) {
-      if (shouldSlide) {
-        cardImg.classList.add(slideClass);
-        cardImg.classList.remove(nonSlideClass);
-        card.style.opacity = 1;
-      }
-    } else {
-      card.style.opacity = 0;
-      cardImg.classList.add(nonSlideClass);
-      cardImg.classList.remove("slideRight", "slideLeft");
-    }
-  });
-}
 
 
 
 
 window.addEventListener("scroll", handleScroll);
-window.addEventListener("load", ()=> {
-  slideUpAnimation(0)});
-window.addEventListener("load", getServises);
 
+window.addEventListener("load", getServises);
+window.addEventListener("load", ()=> {
+  slideUpAnimation(0);
+ setTimeout(()=>{ addAnimation(".animate1")},1000);
+ setTimeout(()=>{ addAnimation(".animate2", "shiftRight")},1000);
+ setTimeout(()=>{ addAnimation(".animateup", "shiftUp")},1000);
+ setTimeout(()=>{ addAnimation(".animatedown", "shiftDown")},1000);
+});

@@ -58,10 +58,13 @@ section {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color:rgb(244, 208, 239);
+  color: #000000;
+  right: 0;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 8px;
 }
 
 .dropdown-content a {
@@ -73,6 +76,7 @@ section {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  
 }
 
 #header h1 {
@@ -155,15 +159,22 @@ section {
   min-width: 200px;
 }
 
-#about .description{
-  max-width: 600px;
+#about .description {
+  max-width: 900px;
+  box-shadow:0 0 10px #e0e0e0;
 }
-#about .image{
-  min-width: 300px;
-  max-height: 100%;
-  height: 100%;
+#about{
+  width: 100vw;
+  min-height: 50vh!important;
+  background-color: #313856;
+}
+#about h2{
+  font-size: calc( 1.6rem + 1.5vw );
 }
 
+.slideUp {
+  animation: slideUp 0.4s ease 1;
+}
 
 
 
@@ -176,17 +187,20 @@ section {
   min-height: 50vh;
   width: 100%;
   padding: 2.5rem;
+  background-color: #484b69;
 }
 .service-card {
   width: calc(250px + 10vw);
   border-radius: 1rem;
   margin: 1rem;
   transition: 0.3s;
-  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.2);
-  border: 1.5px solid #007bff;
+  box-shadow: inset 0 0 10px 0px rgb(246, 247, 246);
+  color: #fff;
 }
 .service-card .description {
   max-width: 100%;
+  
+  
 }
 .service-card .image {
   width: 100%;
@@ -219,23 +233,51 @@ section {
 }
 /*++++++++Why choose us+++++++++++++*/
 #feature {
-  background-color: #ddf8f2;
+  background-color: #a5a8a8;
+ 
 }
 #feature h2 {
-  color: #333f70;
+  color: #ffffff;
 }
 .feature-wrapper div {
   max-width: 400px;
   width: 100%;
-  background-color: #fff;
-  border: 1.5px solid rgb(2, 70, 2);
+  
+  
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: inset 0 0 5px rgb(225, 241, 225);
+  box-shadow: 10px
+}
+.feature-wrapper div:hover {
+  box-shadow: 0 0 10px 5px rgb(246, 247, 246);
+  transform: scale(0.96);
+  transition: 0.3s;
 }
 .feature-wrapper h4 {
-  color: #333f70;
+  color: #f3eef0;
   font-size: 1.5rem;
+}
+#portfolio {
+  background-color: #313856;
+  padding-bottom: 2rem;
+  
+}
+#portfolio h2 {
+  color: #ede6e6;
+  padding: 5px;
+  margin-bottom: 2px;
+  text-size-adjust: 100%;
+  
+}
+#portfolio h4 {
+  color: #0f0e0e;
+}
+#portfolio p {
+  color: #f0eaea;
+}
+#portfolio .feature-wrapper div {
+margin: 10px;
+  
 }
 /*++++++++++++++++++++++++Footer++++++++++++++++++++++++++++++++++++++++++*/
 #footer a {
@@ -265,11 +307,19 @@ section {
   animation: slideUp 0.8s ease 1;
 }
 .shiftLeft {
-  transform: translateX(-100%);
+  transform: translateX(-70%);
   opacity: 0;
 }
 .shiftRight {
-  transform: translateX(100%);
+  transform: translateX(70%);
+  opacity: 0;
+}
+.shiftUp {
+  transform: translateY(70%);
+  opacity: 0;
+}
+.shiftDown {
+  transform: translateY(-70%);
   opacity: 0;
 }
 
