@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.text-gradient-primary {
+  background: linear-gradient(110deg, rgb(4, 132, 252), rgb(51, 253, 51));
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#header {
+  width: 95%;
+  background-color: transparent;
+  color: #fff;
+  z-index: 10;
+  transition: 0.2s;
+}
+
+#header .menu-icon {
+  display: none;
+}
+#header #nav-bar a {
+  padding: 10px;
+  transition: color 0.3s ease; /* Add a transition for smooth color change */
+}
+
+#header nav a:hover {
+  color: #007bff; /* Change color on hover */
+}
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#header h1 {
+  color: #fff;
+}
+
+#side-nav {
+  width: 16rem;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transform: translateX(-100%);
+  transition: 0.3s ease;
+  display: none;
+}
+#side-nav h1 {
+  background: linear-gradient(110deg, rgb(4, 132, 252), rgb(51, 253, 51));
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#side-nav a {
+  color: black;
+  padding: 10px;
+  transition: color 0.3s ease; /* Add a transition for smooth color change */
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+}
+
+#side-nav a:hover {
+  background-color: #e8f2ff;
+  color: #007bff; /* Change color on hover */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+  z-index: 4;
+}
+
+/************hero section************/
+#hero-section {
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  z-index: -1;
+  position: fixed;
+  top:0;
+  transition: 0.05s ease;
+}
+#hero-section::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+#hero-section >.headline-container,#hero-section > #cta-btn {
+  z-index: 1;
+}
+.healine-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.headline-container p {
+  max-width: 500px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border: 2px dashed gray;
+}
+#headline {
+  font-size: calc(2rem + 1vw);
+}
+
+/******----------------service--------------********/
+#services {
+  background-color: rgba(4, 132, 252, 0.7);
+  width: 100%;
+  min-height: 50vh;
+  z-index:4;
+}
+.service-card-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.service-card {
+  max-width: 300px;
+  width: 100%;
+  aspect-ratio: 4/3;
+  box-shadow: 0 2px 8px #e8f2ff;
+  border: 0.1em solid gray;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: 0.4s ease;
+}
+.service-card h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: aqua;
+}
+.service-card:hover {
+  transform: scale(1.04);
+}
+/*++++++++++++++++++++++++technologies+++++++++++++++++++++++++++++++*/
+#technology {
+  padding: 50px 20px;
+  background-color: rgba(4, 132, 252, 0.7);
+}
+
+#technology h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.technology-item {
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.technology-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.technology-item ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding:0 2rem;
+
+}
+
+
+.technology-item ul li {
+  min-width:100px;
+  padding: 5px 0;
+  color: #555;
+}
+.technology-item ul i{
+  font-size: 4rem;
+  padding: 10px;
+}

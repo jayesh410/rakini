@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Web-Development | Rakini SoftTech</title>
+  <!--tailwind css-->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!--font-awesome-->
+  <script src="https://kit.fontawesome.com/e589eafb3a.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./../style.css" />
+
+</head>
+
+<body>
+  <div class="flex justify-center items-center fixed w-full top-0 left-0 z-50 pt-3">
+    <header id="header" class="flex justify-between items-center rounded-lg">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <i class="menu-icon fa-solid fa-bars text-2xl p-2"></i>
+          <h1 class="p-2 text-2xl font-bold">Rakini</h1>
+        </div>
+
+        <nav id="nav-bar" class="flex items-center font-bold gap-6">
+          <a href="./../../index.html">Home</a>
+          <div class="dropdown">
+            <a href="#services" class="dropbtn">Services</a>
+            <div class="dropdown-content shadow-lg rounded">
+              <a href="#">App Development</a>
+              <a href="#">Data Analysis</a>
+              <a href="#">Networking</a>
+              <a href="#">Cloud Computing</a>
+            </div>
+          </div>
+          <!-- Suggested code may be subject to a license. Learn more: ~LicenseLog:3690011227. -->
+          <div class="dropdown">
+            <a href="#feature" class="dropbtn">Features</a>
+            <div class="dropdown-content shadow-lg rounded">
+              <a href="#">link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#contact">Contact</a>
+          <a href="#about">About Us</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <section id="hero-section"
+    class="flex flex-col justify-center items-center bg-gray-200 bg-center bg-cover bg-no-repeat" style="
+        background-image: linear-gradient(
+            110deg,
+            rgba(4, 132, 252, 0.7),
+            rgba(51, 253, 51, 0.5)
+          ),
+          url('./web-dev.jpg');
+      ">
+    <div class="headline-container mx-auto px-2">
+      <h1 id="headline" class="font-bold p-4">
+        Cutting-Edge Web Development Solutions
+      </h1>
+      <p class="font-bold text-xl p-2 rounded-xl">
+        Transforming Ideas into Dynamic Online Experiences
+      </p>
+    </div>
+    <a href="#contact" id="cta-btn"
+      class="slide-up-animation p-3 rounded-lg mx-2 mt-5 border-2 border-blue-500 text-white font-bold bg-blue-500 hover:bg-blue-600 transition-all ease-in-out delay-5 duration-200">Contact
+      us</a>
+  </section>
+  <section id="services" class="p-8">
+    <h2 class="text-3xl font-bold text-center py-5">Our Services</h2>
+    <div class="service-card-container flex flex-wrap justify-center items-center gap-10">
+      <div class=" animate1 service-card bg-red-500">
+        <h3>Web Application Development</h3>
+        <p>
+          Developing custom web applications to streamline your business
+          processes.
+        </p>
+      </div>
+      <div class="animate1 service-card bg-red-500">
+        <h3>E-commerce Development</h3>
+        <p>Building powerful online stores to drive your sales.</p>
+      </div>
+      <div class="animate1 service-card bg-red-500">
+        <h3>Content Management Systems</h3>
+        <p>
+          Implementing user-friendly CMS solutions for easy content
+          management.
+        </p>
+      </div>
+      <div class="animate1 service-card bg-red-500">
+        <h3>Responsive Design</h3>
+        <p>
+          Ensuring your website looks and functions seamlessly on all devices.
+        </p>
+      </div>
+
+      <div class="animate1 service-card bg-red-500">
+        <h3>Search Engine Optimization</h3>
+        <p>
+          Optimizing your website for increased visibility and organic
+          traffic.
+        </p>
+      </div>
+      <div class="animate1 service-card bg-red-500">
+        <h3>Website Maintenance</h3>
+        <p>
+          Providing ongoing support and updates to keep your website running
+          smoothly.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!----+++++++++++++++++++++++-technologies--+++++++++++++++++++++++= -------->
+  <section id="technology">
+    <h2>Technologies We Use</h2>
+    <div class="technology-grid flex justify-center items-center gap-10 flex-col">
+      <div class="technology-item">
+        <h3>Front-End</h3>
+        <ul id="carousel">
+          <li><i class="devicon-html5-plain colored"></i>HTML5</li>
+          <li><i class="devicon-css3-plain colored"></i>CSS3</li>
+          <li><i class="devicon-javascript-plain colored"></i>JavaScript</li>
+          <li><i class="devicon-react-original colored"></i>React</li>
+          <li><i class="devicon-angularjs-plain colored"></i>Angular</li>
+          <li><i class="devicon-vuejs-plain colored"></i>Vue.js</li>
+          <li><i class="devicon-tailwindcss-plain colored"></i>Tailwindcss</li>
+          <li><i class="devicon-bootstrap-plain colored"></i>Bootstrap</li>
+          <li><i class="devicon-sass-original colored"></i>Sass</li>
+        </ul>
+      </div>
+      <div class="technology-item">
+        <h3>Back-End</h3>
+        <ul>
+
+          <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+          <li><i class="devicon-express-original colored"></i> Express.js</li>
+          <li><i class="devicon-php-plain colored"></i> PHP</li>
+          <li><i class="devicon-python-plain colored"></i> Python</li>
+          <li><i class="devicon-django-plain colored"></i> Django</li>
+          <li><i class="devicon-rails-plain colored"></i> Ruby on Rails</li>
+          <li><i class="devicon-nextjs-plain colored"></i> Next.js</li>
+        </ul>
+      </div>
+      <div class="technology-item">
+        <h3>Databases</h3>
+        <ul>
+          <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+          <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+          <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+          <li><i class="devicon-sqlite-plain colored"></i> SQLite</li>
+
+        </ul>
+      </div>
+      <div class="technology-item">
+        <h3>Version Control</h3>
+        <ul>
+          <li><i class="devicon-git-plain colored"></i> Git</li>
+          <li><i class="devicon-github-original colored"></i> GitHub</li>
+          <li><i class="devicon-gitlab-plain colored"></i> GitLab</li>
+
+        </ul>
+      </div>
+      <div class="technology-item">
+        <h3>Deployment & DevOps</h3>
+        <ul>
+          <li><i class="devicon-docker-plain colored"></i> Docker</li>
+          <li><i class="devicon-kubernetes-plain colored"></i> Kubernetes</li>
+          <li><i class="devicon-amazonwebservices-plain colored"></i> AWS</li>
+          <li><i class="devicon-azure-plain colored"></i> Azure</li>
+          <li><i class="devicon-jenkins-plain colored"></i> Jenkins CI/CD Tools </li>
+
+        </ul>
+      </div>
+      <div class="technology-item">
+        <h3>Additional Tools</h3>
+        <ul>
+          <li><i class="devicon-webpack-plain colored"></i> Webpack</li>
+          <li><i class="devicon-babel-plain colored"></i> Babel</li>
+          <li><i class="devicon-npm-original-wordmark colored"></i> NPM</li>
+          <li><i class="devicon-yarn-plain colored"></i> Yarn</li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="bg-gray-800 text-white py-6">
+    <div class="links flex justify-around flex-wrap gap-20">
+      <div class="flex flex-col">
+        <h4>Company</h4>
+        <a> About Us</a>
+        <a> Mission & Vision Career</a>
+      </div>
+      <div class="flex flex-col">
+        <h4>Development</h4>
+        <a>Web development </a>
+        <a>App Development</a>
+        <a> Softwere Development</a>
+        <a>Cloude computing</a>
+        <a>Networking</a>
+        <a>Data analysis</a>
+      </div>
+      <div class="flex flex-col">
+        <h4>Design & Marketing</h4>
+        <a>Web design</a>
+        <a> Digital Marketing</a>
+        <a> Graphics Design</a>
+      </div>
+      <div class="flex flex-col">
+        <h4>Quick link</h4>
+        <a> Blog </a>
+        <a>Contact</a>
+        <div class="flex flex-row gap-2 mt-2">
+          <a><i class="fa-brands fa-facebook"></i></a>
+          <a><i class="fa-brands fa-whatsapp"></i></a>
+          <a><i class="fa-brands fa-instagram"></i> </a>
+          <a><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <h4>Address</h4>
+        <a href="tel:+919067702053"
+          ><i class="fa-solid fa-phone"></i> +91 9067702053</a
+        >
+        <a href="mailto:conatct@rakinisofttech.com"
+          ><i class="fa-solid fa-envelope"></i> contact@rakinisofttech.com</a
+        >
+        <a>
+          <i class="fa-solid fa-location-dot"></i> Pimple Gurav, Pune
+          411018<br />
+        </a>
+      </div>
+    </div>
+    <hr class="my-5 bg-white" />
+    <div class="flex justify-center text-2xl">Rakini Softtech</div>
+    <div class="container mx-auto px-6 text-center mt-4">
+      <p>Copyright &copy; 2024 Rakini SoftTech.</p>
+    </div>
+  </footer>
+  <script src="./../src/index.js"></script>
+</body>
+
+</html>
