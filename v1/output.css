@@ -1259,6 +1259,7 @@ section {
 
 #footer a {
   transition: 400ms;
+  margin: 10px;
 }
 
 .slideLeft {
