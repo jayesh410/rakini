@@ -159,7 +159,7 @@ html {
 
 /******----------------service--------------********/
 #services {
-  background-color: rgba(4, 132, 252, 0.7);
+  background-color:white;
   width: 100%;
   min-height: 50vh;
   z-index:4;
@@ -177,10 +177,7 @@ html {
   max-width: 300px;
   width: 100%;
   aspect-ratio: 4/3;
-  box-shadow: 0 2px 8px #e8f2ff;
-  border: 0.1em solid gray;
   padding: 1rem;
-  border-radius: 2rem;
   transition: 0.4s ease;
 }
 .service-card h3 {
@@ -188,7 +185,7 @@ html {
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
-  color: aqua;
+  color: rgb(78, 78, 78);
 }
 .service-card:hover {
   transform: scale(1.04);
@@ -196,7 +193,7 @@ html {
 /*++++++++++++++++++++++++technologies+++++++++++++++++++++++++++++++*/
 #technology {
   padding: 50px 20px;
-  background-color: rgba(4, 132, 252, 0.7);
+  background-color: white
 }
 
 #technology h2 {
@@ -208,8 +205,7 @@ html {
   max-width: 900px;
   width: 100%;
   background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
   padding: 20px;
   text-align: center;
 }
