@@ -36,7 +36,7 @@ html {
 }
 
 #header nav a:hover {
-  color: #007bff; /* Change color on hover */
+  border-bottom: 2px solid white; /* Change color on hover */
 }
 .dropbtn {
   padding: 16px;
@@ -52,9 +52,11 @@ html {
 .dropdown-content {
   display: none;
   position: absolute;
+  top: -10;
   background-color: #fff;
   min-width: 160px;
   z-index: 1;
+  animation: zoomIn 0.3s ease 1;
 }
 
 .dropdown-content a {
@@ -260,3 +262,24 @@ html {
 .feature-wrapper h4 {
   color: #8e8e8e;
   font-size: 1.5rem;}
+  .form-container {
+    max-width: 700px;
+  }
+  .form-container input,
+  .form-container textarea {
+    width: 90%;
+    border: 1.5px solid #555;
+  }
+  
+  @media (max-width: 575.98px) {
+    #nav-bar {
+      display: none;
+    }
+  
+    #header .menu-icon {
+      display: block;
+    }
+    #headline {
+      font-size: calc(1.6rem + 1vw);
+    }
+  }

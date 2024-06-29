@@ -488,3 +488,24 @@ margin: 10px;
 @media (min-width: 1200px) {
   /* Styles for extra large devices */
 }
+.form-container {
+  max-width: 700px;
+}
+.form-container input,
+.form-container textarea {
+  width: 90%;
+  border: 1.5px solid #555;
+}
+
+@media (max-width: 575.98px) {
+  #nav-bar {
+    display: none;
+  }
+
+  #header .menu-icon {
+    display: block;
+  }
+  #headline {
+    font-size: calc(1.6rem + 1vw);
+  }
+}
