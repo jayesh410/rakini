@@ -118,7 +118,7 @@ section {
 
 #side-nav a:hover {
   background-color: #e8f2ff;
-  color: #007bff; /* Change color on hover */
+  color: #0d77e8; /* Change color on hover */
 }
 .overlay {
   position: fixed;
